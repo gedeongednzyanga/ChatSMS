@@ -30,7 +30,9 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushNamed("screens/read_message");
+              },
               child: Container(
                 padding: EdgeInsets.all(10.0),
                 child: Row(

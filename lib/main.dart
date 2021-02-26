@@ -1,5 +1,6 @@
 import 'package:ChatSMS/screens/splash_screen.dart';
 import 'package:ChatSMS/screens/write_message.dart';
+import 'package:ChatSMS/screens/read_message.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: <String, WidgetBuilder>{
         "screens/write_message": (BuildContext context) => new WriteMessage(),
+        "screens/read_message": (BuildContext context) => new ReadMessage(),
       },
       home: SplashScreen(),
     );
